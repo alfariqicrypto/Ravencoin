@@ -164,17 +164,17 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_COINBASE_ASSETS].nOverrideMinerConfirmationWindow = 2016;
 
         // The best chain should have at least this much work
-        consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000020d4ac871fb7009b63"); // Block 1186833
+        consensus.nMinimumChainWork = uint256S("0x00"); // Block xxx
 
         // By default assume that the signatures in ancestors of this block are valid. Block# 1040000
-        consensus.defaultAssumeValid = uint256S("0x0000000000000d4840d4de1f7d943542c2aed532bd5d6527274fc0142fa1a410"); // Block 1186833
+        consensus.defaultAssumeValid = uint256S("0x000000cba50260c77ad344051a00d477bc6159a2426e94ff62b0a9173f00ef82"); // Block 1
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-       pchMessageStart[0] = 0x52; // R
+        pchMessageStart[0] = 0x52; // R
         pchMessageStart[1] = 0xfa; // D
         pchMessageStart[2] = 0x43; // C
         pchMessageStart[3] = 0x4E; // N
@@ -196,6 +196,10 @@ public:
 	vSeeds.emplace_back("seed4.redecoin.eu", false);
 	vSeeds.emplace_back("seed5.redecoin.eu", false);
 	vSeeds.emplace_back("seed6.redecoin.eu", false);
+	
+	// Backup Seeders 
+	vSeeds.emplace_back("redpool.pl", false);
+	vSeeds.emplace_back("explorer.redecoin.eu", false);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60); // R
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,30); // D
