@@ -260,17 +260,17 @@ public:
         strGlobalBurnAddress = "RXBurnXXXXXXXXXXXXXXXXXXXXXXWUo9FV";
 
         // DGW Activation
-        nDGWActivationBlock = 262000;
+        nDGWActivationBlock = 265000;
 
         nMaxReorganizationDepth = 60; // 60 at 1 minute block timespan is +/- 60 minutes.
         nMinReorganizationPeers = 4;
         nMinReorganizationAge = 60 * 60 * 12; // 12 hours
 
-        nAssetActivationHeight = 435456; // Asset activated block height
-        nMessagingActivationBlock = 1092672; // Messaging activated block height
-        nRestrictedActivationBlock = 1092672; // Restricted activated block height
+        nAssetActivationHeight = 100000; // Asset activated block height
+        nMessagingActivationBlock = 100000; // Messaging activated block height
+        nRestrictedActivationBlock = 100000; // Restricted activated block height
 
-        nKAAAWWWPOWActivationTime = 1663027199; // 2022-09-12 GMT / T 23:59:59+00:00
+        nKAAAWWWPOWActivationTime = 1663257562; // Thu, 15 Sep 2022 15:59:22 +0000
         nKAWPOWActivationTime = nKAAAWWWPOWActivationTime;
         /** RVN End **/
     }
@@ -398,11 +398,11 @@ public:
         nMinReorganizationPeers = 4;
         nMinReorganizationAge = 60 * 60 * 12; // 12 hours
 
-        nAssetActivationHeight = 6048; // Asset activated block height
-        nMessagingActivationBlock = 10080; // Messaging activated block height
-        nRestrictedActivationBlock = 10080; // Restricted activated block height
+        nAssetActivationHeight = 100000; // Asset activated block height
+        nMessagingActivationBlock = 100000; // Messaging activated block height
+        nRestrictedActivationBlock = 100000; // Restricted activated block height
 
-        nKAAAWWWPOWActivationTime = 1663027199; // 2022-09-12 GMT / T 23:59:59+00:00
+        nKAAAWWWPOWActivationTime = 1663257562; // Thu, 15 Sep 2022 15:59:22 +0000
         nKAWPOWActivationTime = nKAAAWWWPOWActivationTime;
         /** RVN End **/
     }
@@ -529,15 +529,15 @@ public:
         nMinReorganizationPeers = 4;
         nMinReorganizationAge = 60 * 60 * 12; // 12 hours
 
-        nAssetActivationHeight = 0; // Asset activated block height
-        nMessagingActivationBlock = 0; // Messaging activated block height
-        nRestrictedActivationBlock = 0; // Restricted activated block height
+        nAssetActivationHeight = 100000; // Asset activated block height
+        nMessagingActivationBlock = 100000; // Messaging activated block height
+        nRestrictedActivationBlock = 100000; // Restricted activated block height
 
         // TODO, we need to figure out what to do with this for regtest. This effects the unit tests
         // For now we can use a timestamp very far away
         // If you are looking to test the kawpow hashing function in regtest. You will need to change this number
 
-        nKAAAWWWPOWActivationTime = 1663027199; // 2022-09-12 GMT / T 23:59:59+00:00
+        nKAAAWWWPOWActivationTime = 1663257562; // Thu, 15 Sep 2022 15:59:22 +0000
         nKAWPOWActivationTime = nKAAAWWWPOWActivationTime;
         /** RVN End **/
     }
