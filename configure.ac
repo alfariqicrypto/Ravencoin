@@ -1,23 +1,22 @@
 dnl require autoconf 2.60 (AS_ECHO/AS_ECHO_N)
 AC_PREREQ([2.60])
-define(_CLIENT_VERSION_MAJOR, 4)
-define(_CLIENT_VERSION_MINOR, 3)
-define(_CLIENT_VERSION_REVISION, 2)
+define(_CLIENT_VERSION_MAJOR, 2)
+define(_CLIENT_VERSION_MINOR, 0)
+define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 1)
 define(_CLIENT_VERSION_IS_RELEASE, true)
-define(_COPYRIGHT_YEAR, 2020)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Raven Core]])
-AC_INIT([Raven Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/RavenProject/Ravencoin/issues],[raven],[https://ravencoin.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Redecoin Core]])
+AC_INIT([Redecoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/redecoinproject/redecoin/issues],[rede],[https://redecoin.eu])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/raven-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-RAVEN_DAEMON_NAME=ravend
-RAVEN_GUI_NAME=raven-qt
-RAVEN_CLI_NAME=raven-cli
-RAVEN_TX_NAME=raven-tx
+RAVEN_DAEMON_NAME=redecoind
+RAVEN_GUI_NAME=redecoin-qt
+RAVEN_CLI_NAME=redecoin-cli
+RAVEN_TX_NAME=redecoin-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
