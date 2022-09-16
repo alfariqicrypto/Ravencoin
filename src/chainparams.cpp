@@ -270,7 +270,7 @@ public:
         nMessagingActivationBlock = 100000; // Messaging activated block height
         nRestrictedActivationBlock = 100000; // Restricted activated block height
 
-        nKAAAWWWPOWActivationTime = 1663257562; // Thu, 15 Sep 2022 15:59:22 +0000
+        nKAAAWWWPOWActivationTime = 1663340753; // Fri, 16 Sep 2022 15:05:53 +0000
         nKAWPOWActivationTime = nKAAAWWWPOWActivationTime;
         /** RVN End **/
     }
