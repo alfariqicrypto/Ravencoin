@@ -332,7 +332,7 @@ public:
 
         uint32_t nGenesisTime = 1645757351;
 
-        genesis = CreateGenesisBlock(1645757351, 24232574, 0x1e00ffff, 2, 500 * COIN);
+        genesis = CreateGenesisBlock(nGenesisTime, 24232574, 0x1e00ffff, 2, 500 * COIN);
 
         consensus.hashGenesisBlock = genesis.GetX16RHash();
 
